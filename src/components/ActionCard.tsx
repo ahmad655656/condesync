@@ -5,8 +5,11 @@ const ActionCard = ({action, onClick} : {action: QuickActionType; onClick: () =>
   return (
     <Card className='group relative overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-lg cursor-pointer' onClick={onClick}>
       
-    {/* Action Gradient */}
-    <div className={`absolute inset-0 bg-gradient-to-br ${action.gradient} opacity-100 group-hover:opacity-50 transition-opacity`} />
+     {/* ACTION GRADIENT */}
+      <div
+        className={`absolute inset-0 bg-gradient-to-br ${action.gradient} opacity-100 group-hover:opacity-50 transition-opacity`}
+      />
+
     {/* Action Content Wrapper */}
     <div className='relative p-6 size-full'>
       <div className='space-y-3'>
